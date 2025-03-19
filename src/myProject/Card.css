@@ -1,0 +1,74 @@
+body {
+    background-color: #1a1a2e;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .card {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(145deg, #23234e, #2b2b6b);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(237, 85, 174, 0.3), rgba(34, 76, 86, 0.3));
+    z-index: 0;
+    filter: blur(50px);
+    transform: rotate(30deg);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff9ff3;
+    text-shadow: 0 0 5px #ff9ff3, 0 0 10px #ff6ec7;
+  }
+  
+  .card-category {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #feca57;
+  }
+  
+  .card-price, .card-additives, .card-beds {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .card-button {
+    background: linear-gradient(45deg, #ff9ff3, #ff6ec7);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .card-button:hover {
+    background: linear-gradient(45deg, #ff6ec7, #ff3cae);
+    transform: scale(1.1);
+  }
+  
+  .card-button:active {
+    transform: scale(0.95);
+  }
+  

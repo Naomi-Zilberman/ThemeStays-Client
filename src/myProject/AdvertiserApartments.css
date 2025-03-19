@@ -1,0 +1,50 @@
+/* עיצוב כללי */
+body {
+    background: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* עיצוב מצב טעינה ושגיאה */
+  .loading, .error {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5rem;
+    color: #feca57;
+  }
+  
+  /* עיצוב כותרת */
+  .advertiser-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff9ff3;
+    margin: 20px 0;
+    text-shadow: 0 0 10px #ff9ff3, 0 0 20px #ff6ec7;
+  }
+  
+  /* עיצוב הודעת אין דירות */
+  .no-apartments {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #feca57;
+  }
+  
+  /* רשימת הדירות */
+  .apartment-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* פריט דירה */
+  .apartment-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  

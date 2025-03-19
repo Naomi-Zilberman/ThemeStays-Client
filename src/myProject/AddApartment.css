@@ -1,0 +1,70 @@
+.add-apartment-form {
+    background-color: #f9f7f7;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #d06c8e;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    color: #4a4a4a;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input, textarea, select {
+    padding: 0.8rem;
+    border: 2px solid #d06c8e;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: #9b4d84;
+    box-shadow: 0 0 8px rgba(155, 77, 132, 0.5);
+  }
+  
+  button.submit-btn {
+    background-color: #d06c8e;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  button.submit-btn:hover {
+    background-color: #9b4d84;
+  }
+  
+  .error-msg {
+    color: red;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  

@@ -1,0 +1,138 @@
+/* כללית */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222; /* רקע כהה לדף */
+    color: #fff; /* צבע טקסט לבן */
+    margin: 0;
+    padding: 0;
+}
+
+/* עיצוב עבור טופס ההרשמה */
+.registration-form {
+    max-width: 450px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #444, #333); /* גרדיאנט עדין */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* צל מודגש יותר */
+    animation: fadeIn 1s ease-out;
+}
+/* עיצוב עבור טופס ההרשמה */
+.registration-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #444; /* צבע גבול כהה */
+    border-radius: 8px;
+    background-color: #333; /* צבע רקע כהה לשדות */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* צל עדין *
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.registration-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e74c3c; /* צבע אדום סוחף לכותרת */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* הצללה לכותרת */
+}
+
+/* עיצוב עבור שדות קלט */
+.registration-form input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 2px solid #444; /* צבע גבול כהה */
+    border-radius: 4px;
+    background-color: #222; /* צבע רקע כהה לשדות */
+    color: #fff; /* צבע טקסט לבן */
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.registration-form input:focus {
+    border-color: #e74c3c;
+    outline: none;
+    background-color: #1c1c1c;
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.8); /* צל אדום בעת פוקוס */
+}
+
+.registration-form input:focus {
+    border-color: #e74c3c; /* צבע גבול אדום בעת פוקוס */
+    outline: none;
+    background-color: #1c1c1c; /* צבע רקע כהה בעת פוקוס */
+}
+
+/* עיצוב עבור שגיאות */
+.error-text {
+    color: #e74c3c; /* צבע טקסט אדום לשגיאות */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+/* אנימציה לזעזוע בהודעת שגיאה */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+/* עיצוב עבור כפתור ההגשה */
+.submit-button {
+    /* width: 100%; */
+    /* padding: 14px; */
+    background-color: #e74c3c; /* צבע רקע אדום לכפתור */
+    color: #fff; /* צבע טקסט לבן בכפתור */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* רווח עליון לכפתור */
+}
+
+.submit-button:hover {
+    background-color: #c0392b; /* צבע רקע אדום כהה לכפתור בעת ריחוף */
+}
+.submit-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05); /* הגדלה עדינה בעת ריחוף */
+}
+
+/* כפתור במהלך טעינה */
+.submit-button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+    transform: scale(1);
+}
+
+/* כפתור "הרשם" */
+.register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db; /* צבע כחול מרהיב לכפתור */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* אפקט ריחוף לכפתור הרשם */
+.register-button:hover {
+    background-color: #2980b9;
+}
+
+/* אנימציה ל-Toast */
+.toast {
+    background-color: #1e2a47; /* רקע כהה עם אפקטים חדים */
+    color: #e74c3c;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}

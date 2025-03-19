@@ -1,0 +1,20 @@
+.buttons-container {
+    display: flex;               /* הצגת כפתורים ותיבות בחירה בשורה אחת */
+    gap: 20px;                   /* מרווח בין כל אלמנט (כפתור או Select) */
+    padding: 20px;
+    width: 100%;                 /* להבטיח שהקונטיינר יתפוס את כל הרוחב */
+    box-sizing: border-box;      /* לוודא שה-padding לא ישפיע על גודל הקונטיינר */
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 200px; /* ניתן לשנות את הרוחב של ה-select לפי הצורך */
+}
+
+select:focus {
+    border-color: #724aae; /* צבע גבול כשיש פוקוס */
+    outline: none; /* להסיר את קו המיקוד הברירת מחדל */
+}

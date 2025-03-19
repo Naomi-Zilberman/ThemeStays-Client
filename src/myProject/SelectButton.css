@@ -1,0 +1,93 @@
+.select-button-container {
+    position: relative;
+  }
+  
+  .select-button {
+    .select-button-container {
+      position: relative;
+      display: inline-block;
+      margin: 10px;
+  }
+  
+  .select-button {
+      padding: 10px 20px;
+      background-color: #934caf;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  }
+  
+  .select-button:hover {
+      background-color: #45a049;
+  }
+  
+  .select-menu {
+      position: absolute;
+      top: 45px;
+      left: 0;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: slideDown 0.3s forwards;
+  }
+  
+  .select-dropdown {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+  }
+  
+  @keyframes slideDown {
+      0% {
+          opacity: 0;
+          transform: translateY(-20px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .select-menu {
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+  }
+  
+  .select-dropdown {
+    background-color: black;
+color: white;
+border-radius: 12px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .apply-button {
+    cursor: pointer; /* הופך את הסמן ליד */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #45a049; /* צבע רקע חדש בהרחפה */
+}

@@ -1,0 +1,87 @@
+/* style.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4f7f2; /* צבע רקע נעים ונקי */
+    color: #333; /* צבע טקסט כהה להבהרה */
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* פריסה רספונסיבית */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* מרכז את הכרטיסים */
+}
+
+.card {
+    background: #ffffff; /* רקע לבן */
+    border-radius: 15px; /* קצוות מעוגלים */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* צל עדין */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* אנימציות */
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-15px); /* אנימציה של הזזה */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* צל חזק יותר */
+    background-color: #f0f9f8; /* שינוי צבע רקע */
+}
+
+.card h3 {
+    font-size: 1.8em; /* גודל גופן יותר גדול */
+    margin: 0 0 15px;
+    color: #2a3d66; /* צבע כותרת עמוק */
+    font-weight: 600; /* כותרת מודגשת */
+    font-family: 'Poppins', sans-serif;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.card .price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ff6347; /* צבע חזק למחיר */
+    margin: 10px 0;
+}
+
+.card .category {
+    font-size: 1.2em;
+    color: #4682b4; /* צבע להקטגוריה */
+    font-weight: 500;
+}
+
+.card .numBeds {
+    font-size: 1em;
+    color: #a3a3a3;
+    font-style: italic; /* מראה עדין למספר חדרי השינה */
+}
+
+.card .additives {
+    font-size: 1em;
+    color: #8a8a8a;
+    font-style: italic; /* עדינות עבור תוספים */
+}
+
+.card .button {
+    display: inline-block;
+    background-color: #ff6347;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.card .button:hover {
+    background-color: #e95340; /* שינוי צבע כשלוחצים */
+}

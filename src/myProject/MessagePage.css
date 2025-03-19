@@ -1,0 +1,55 @@
+/* MessagePage.css */
+.message-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* רקע כהה */
+    z-index: 1000;
+}
+
+.message-content {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff0000, #ffff00);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: crazy-animation 5s infinite;
+}
+
+/* אנימציה הזויה עם תזוזות וצבעים משתנים */
+@keyframes crazy-animation {
+    0% {
+        transform: scale(1) rotate(0deg);
+        color: #ff00ff;
+        filter: hue-rotate(0deg);
+    }
+    25% {
+        transform: scale(1.2) rotate(45deg);
+        color: #ff0000;
+        filter: hue-rotate(90deg);
+    }
+    50% {
+        transform: scale(1) rotate(90deg);
+        color: #00ffff;
+        filter: hue-rotate(180deg);
+    }
+    75% {
+        transform: scale(1.1) rotate(135deg);
+        color: #ffff00;
+        filter: hue-rotate(270deg);
+    }
+    100% {
+        transform: scale(1) rotate(180deg);
+        color: #ff00ff;
+        filter: hue-rotate(360deg);
+    }
+}

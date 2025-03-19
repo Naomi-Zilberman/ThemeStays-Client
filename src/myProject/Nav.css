@@ -1,0 +1,57 @@
+/* קובע את המראה הכללי של ה-navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    width: 150px; /* רוחב הלוגו */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background-color: #8caaae;
+    transition: background-color 0.3s;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.user-icon {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.username {
+    font-size: 16px;
+}
+
+/* הגדרת צבעים לשדות פעילים */
+.nav-item.active {
+    background-color: #ff6347; /* צבע דגש */
+}
